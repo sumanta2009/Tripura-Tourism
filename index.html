@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tripura Tourism</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+	.slideshow button {
+      padding: 10px 20px;
+      background-color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      animation: fadeIn 2s 1.5s;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .slideshow button:hover {
+      background-color: #1f4037;
+      color: white;
+      transform: scale(1.1);
+    }
+    .header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar ul li {
+      margin: 0 1rem;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #00bcd4;
+    }
+	
+    button a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    button a:hover {
+      color: #00ffae;
+	  text-decoration: none;
+    }
+
+    /* Slideshow Section */
+    .slideshow {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .overlay h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .overlay p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Other Sections */
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer {
+	text-align: center;
+	padding: 1rem;
+	background: #333;
+	color: #fff;
+    }
+	
+	.info{
+	text-align: justify;
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Tripura</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="slideshow">
+    <div class="slide active" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/814/350/568/spa-beach-hotel-infinity-pool-wallpaper-preview.jpg');"></div>
+    <div class="slide" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/787/399/647/life-resort-travel-vacation-wallpaper-preview.jpg');"></div>
+    <div class="slide" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/359/481/80/luxury-hotel-room-bedroom-furniture-set-wallpaper-preview.jpg');"></div>
+    <div class="overlay">
+      <h1>Welcome to Tripura</h1>
+      <p>Discover the best tourist place here</p>
+	  <p>-----------------------------------------------------</p>
+	  <button><a href="place.html">Get Start</a></button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Tripura</h2>
+    <p class="info">Tripura, a picturesque state in Northeast India, offers a rich blend of cultural heritage, natural beauty, and historical landmarks, making it a perfect destination for travelers. <i>The iconic</i> <b>Ujjayanta Palace</b>, a majestic royal residence turned museum, showcases the state's cultural legacy. <b>Neermahal</b>, <i>a stunning water palace,</i> stands as a testament to the architectural brilliance of the past. <i>Nature lovers will be captivated by</i> <b>Sepahijala Wildlife Sanctuary</b>, home to exotic flora and fauna, and the tranquil <b>Dumboor Lake</b>, <i>ideal for boating and bird-watching.</i> The ancient <b>Unakoti Hills</b>, <i>adorned with magnificent rock carvings,</i> and the revered <b>Tripura Sundari Temple</b>, <i>one of the 51 Shakti Peethas,</i> attract both history buffs and spiritual seekers. With its vibrant festivals, warm hospitality, and untouched landscapes, Tripura promises a unique and unforgettable travel experience.</p>
+  </section>
+
+  <section id="services">
+    <h2>All Services</h2>
+    <p>We provide the best solutions for your needs.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+	<p><b>Contact No.:</b> <i>6009954556</i></p>
+	<p>Scan this code using the WhatsApp camera to get our number.</p>
+	<a href="photo\Full WhatsApp QR.png"><img src="photo\WhatsApp QR.png" height="100px" width="100"></a>
+	<p>Scan this QR code to get our contact number.</p>
+	<a href="photo\Full Contact QR.jpg"><img src="photo\Contact QR.jpg" height="100px" width="100"></a>
+    <p>For personalized tour packages, guides, or additional information, Feel free to reach out to us anytime!</p>
+  </section>
+
+  <footer class="footer">
+    <p>&reg; 2024 Tripura Tourism. All rights reserved. :)</p>
+	<p><small>{Developed by Sumanta Debnath}</small></p>
+  </footer>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Wait for the DOM to load before running the slideshow
+    document.addEventListener("DOMContentLoaded", () => {
+      showSlide(currentSlide);
+      setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    });
+  </script>
+</body>
+</html>
